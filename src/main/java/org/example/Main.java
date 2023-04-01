@@ -74,7 +74,8 @@ public class Main {
     // Función que verifica si un arreglo de enteros tiene números solo del 1 al 9
     public static boolean esNumerosUnicos(int[] arreglo) {
         Set<Integer> numerosUnicos = new HashSet<>();
-        for (int numero : arreglo) {
+        for (int i = 0; i < arreglo.length; i++) {
+            int numero = arreglo[i];
             if (numero < 1 || numero > 9) {
                 return false;
             }
